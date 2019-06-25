@@ -1,0 +1,72 @@
+Name: Laiba Mustafa
+UoG Email Address: lmustafa@uoguelph.ca
+
+How to run your application: provide the
+exact string to type to compile it, and run it.
+Must be runnable on the command line: java Planner
+
+
+Notes for TAs (anything special we
+should know when grading your assignment): I couldn’t figure out the database + didn’t have time so I mainly focused on the GUI
+aspect and other things that were easily changeable. The code is mostly a layout of what the user
+interaction would look like, also didn’t use a drag and drop editor so it’s not pretty.
+
+1) refactor and restructure class
+design for improved encapsulation,
+modularity, cohesion and coupling :
+
+- have a univ package
+- classes needing Course.java have an import univ.Course statement
+- Course.java has been made protected
+
+2) demonstrate use of inheritance through super/sub classes
+as well as through the use of interfaces:
+
+- the Degree class in abstract, anything that extends degree has
+its methods - like General/Honours/BCG/CS/SEng
+
+3)demonstrate clear understanding event driven programming through
+well designed listeners and gui components:
+
+
+- Used several different Frames, there are layers to the gui component.
+firstFrame lets you selected Planner or Administrator. firstFrame.java calls studentFrame/framNewStudent.
+studentFrame.java calls CourseGUI.java which also calls DegreeInforGUI.java
+
+
+4) demonstrate service-based error handling through a rich set
+of exception classes that communicate specific errors to client classes:
+
+- have my own Exception class called Exception.java to throw customizable exceptions
+
+
+5) use inner classes, anonymous classes, and/or lambdas effectively:
+- java class firstFrame.java has many inner classes for listeners
+
+6) Two different layout managers:
+
+- CourseGUI.java and frameNewStudent.java both use GridBagLayout,
+DegreeInFoGuI uses the borderLayout
+
+7) Separate window/panel for administration:
+
+- firstFrame.java, the first window is for Planner/Administrator selection
+
+8) Listeners:
+
+- Each button in each GUI Frame has listeners, the inner
+classes for which are kept in firstFrame.java starting from line 47 until the end
+
+9) Attempt class created:
+- yes, check Attempt.java
+
+10) Classes in package:
+- There is a univ package
+
+11) Refactor Plan of Study (include how/where
+you provided the functionality if you eliminated POS):
+- Moved POS to Student
+
+12) Javadoc comments (the most complete examples):
+- Student.java
+
